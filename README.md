@@ -4,6 +4,7 @@ Aplikasi untuk mencatat data klub sepak bola, score pertandingan dan data klasem
 
 Jalankan perintah berikut untuk menjalankan aplikasi.
 - `composer install`
+- `npm install`
 - `php artisan key:generate`
 - `php artisan migrate` 
 - `npm run dev` atau `npm run build`
