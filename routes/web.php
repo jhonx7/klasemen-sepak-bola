@@ -1,18 +1,16 @@
 <?php
 
+use App\Http\Controllers\KlubController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+Route::get('/', [KlubController::class, 'index'])->name('home');
+Route::post('/klub', [KlubController::class, 'tambahKlub'])->name('klub.tambah');
+Route::get('/skor', [KlubController::class, 'skor'])->name('skor');
+Route::post('/skor', [KlubController::class, 'tambahSkor'])->name('skor.tambah');
+Route::get('/klasemen', [KlubController::class, 'klasemen'])->name('klasemen');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
