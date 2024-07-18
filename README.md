@@ -1,6 +1,7 @@
 ## Klasemen Pertandingan Sepak Bola
 
-Technical Test Aptavis
+Technical Test Aptavis. 
+
 Aplikasi untuk mencatat data klub sepak bola, score pertandingan dan data klasemen klub. Dibuat dengan Laravel , Inertia JS, dan React JS
 
 Jalankan perintah berikut untuk menjalankan aplikasi.
